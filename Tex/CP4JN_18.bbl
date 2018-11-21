@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{FeynmanMM}
+Sands Feynman, Leighton.
+\newblock The feynman lectures on physics, 34: The magnetism of matter, 2013.
+
+\bibitem{FeynmanFM}
+Sands Feynman, Leighton.
+\newblock The feynman lectures on physics, 36: Ferromagnetism, 2013.
+
+\bibitem{HJ-SP}
+Morten Hjorth-Jensen.
+\newblock Computational physics lectures: Statistical physics and the ising
+  model, Aug 23 2017.
+
+\bibitem{CPgithub}
+Morten Hjorth-Jensen.
+\newblock Repository containing material pertinent to fys3150 at the university
+  of oslo, 2018.
+
+\bibitem{Fitzpatrick}
+Ross Moore.
+\newblock The ising model, 1999.
+
+\bibitem{assignmentpaper}
+Computational Physics.
+\newblock Project 4 assignment paper, Fall 2018.
+
+\bibitem{armadillo}
+Conrad Sanderson and Ryan Curtin.
+\newblock Armadillo: a template-based c++ library for linear algebra., 2016.
+
+\bibitem{Walter}
+Walter and Barkema.
+\newblock An introduction to monte carlo methods., 2015.
+
+\end{thebibliography}

@@ -1,0 +1,24 @@
+1. Makefile
+output: main.o
+	c++ -O3 -std=c++11 -Rpass=loop-vectorize -o Ising.x main.cpp -larmadillo 
+	hvorfor ikke
+	c++ -O3 -std=c++11 main.cpp -larmadillo -o output?
+main.o: main.cpp
+	g++ -c main.cpp
+
+clean:
+	rm *.o output
+
+2. Groundstate initialization done rather ineffectively?
+  // Initialize spin matrix, energy, and magnetization for groundstate
+  mat SpinMatrix = ones<mat>(NSpins,NSpins);
+  double Energy = -2*(NSpins*NSpins);
+  double MagneticMoment = (double) NSpins*NSpins;
+
+<E>
+3. er   for( int de =-8; de <= 8; de+=4) EnergyDifference(de+8) = exp(-de/Temperature); går gjennom -8, -4, 0, 4, 8 og setter verier på 
+4. Hva er poenget med "sweep over lattice"? Skal vi ikke bare flippe én spin og se hva energien blir basert på nabospins? Noe med <E> å gjøre? Men hvorfor hele latticen?
+5. Hva skjer her?  
+- int ix = (int) (distribution(gen)*(double)NSpins); <- får på et vis uniformt fordelt tall mellom [0,Nspins]
+- if ( distribution(gen) <= EnergyDifference(deltaE+8) ) <-  distribution(gen) gir U [0,1] Hvorfor er dette det samme som: if( Delta En < 0 OR r<=e^{DE b}) tror jeg ser greia, få en forklaring uans!
+6. Var det et triks på PBC lattice ute og gikk?

@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{Methods}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Thermodynamic properties}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{The Ising model}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Model application - benchmarking}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{The Metropolis algorithm}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Algorithm implementation}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Equilibrium time}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.7}{Variance in energy}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.8}{Phase transitions}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.9}{Estimating the Curie temperature}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Results}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Initial evaluation of Metropolis implementation}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Equilibrium time}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.3}{Variance in energy}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.4}{Estimating the Curie temperature}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Discussion of results}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Initial evaluation of Metropolis implementation}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Initial evaluation of Metropolis implementation}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.3}{Equilibrium time}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.4}{Variance in energy}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.5}{Estimating the Curie temperature}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 24
+\BOOKMARK [1][-]{section*.3}{References}{}% 25
