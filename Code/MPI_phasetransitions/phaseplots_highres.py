@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import string as str
 from matplotlib.pyplot import figure
-outdata=["data_highT40","data_highT60","data_highT80","data_augment100"]
+outdata=["data_augment40","data_augment60","data_augment80","data_augment100"]
 
 
 L=[40,60,80,100]

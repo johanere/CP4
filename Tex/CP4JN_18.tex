@@ -153,8 +153,13 @@ Sep 24, 2018
 \vspace{1cm}
 The Stern Gerlach experiment in \newline
 \section{Abstract}
+The scope of this project is to examine a numerical simulation of the Ising model, implemented into a program through use of the the Metropolis algorithm. Specifically, this project aims to evaluate the ability of said program to simulate the expected ferromagnetic behaviour for spin lattices of up to $40 \times 40$, and it's aptitude for applications in the studies of phase transitions for lattices up to $100 \times 100$. 
+
+Conclude that the Ising model using the metropolis algorithm can simulate an $L=2$ lattice within a relative tolerance of $10^{-3}$ on three of four paramters from the analytical values after $3 \cdot 10^6$ cycles, although $6 \cdot 10^6$ cycles should be used if $C_V$ is of special interest. On the other hand, $C_V$ appears stable after $3\cdot 10^6$ for $L=20$.   Thus, $t_{eq}=3\cdot 10^6$, under the assumption that larger lattices will further increase stability of mean. In order to remove initial expectation value bias, such values should only be recorded after $t_{eq}$. On low temperatures, random initial spin configuration is concluded to result in higher stabilization time for mean values - thus ordered initial spin is to be preferred in general. The Metropolis algorithm implementation appears to produce some of the expected behaviour near the Curie temperature for lattices up to $L=100$. Discrepancies in data resolution and number of cycles before and after $t_{eq}$ means that no definite conclusions may be drawn with regards to applications in the study of phase transitions. A definite conclusion to this question could however be obtained through re-evaluation of the program, using for example a cluster computing.
 
 \section{Introduction}
+
+
 In general, magnets are objects which produce a magnetic field. Such fields arise from net magnetic moment and induction from electric currents  \cite{FeynmanMM}. In the case of the strong magnetic fields observed in ferromagnets, the spin configuration of electrons in neighboring atoms largely decides the net magnetic moment \cite{FeynmanFM}. This means that there is a connection between the microstate of the object and it's magnetic properties. These microstates are quantum states, and are therefore of a stochastic nature. The probability of a system occupying a specific microstate, may therefore be described in the canonical ensemble by the Boltzmann distribution \eqref{eq:Boltzdist} where $k_B$ is the Boltzmann constant, $T$ the temperature,  and $Z$ \eqref{eq:partitionfunction} the canonical partition function, which sums over the energy, $E$, of all possible states \cite{HJ-SP}. 
 
 \begin{equation}
@@ -169,25 +174,17 @@ Z=\sum_{i=1}^M e^{-\beta E_i}
 
 The properties of the canonical ensemble is used to find the expectation value of the energy, $\langle E \rangle$ which is subject to both the principle of energy minimization and the principle of maximum entropy, $S$. At the equilibrium point between these principles, the Helmoltz' free energy, $F=\langle E \rangle-TS$, is minimized [ibid]. In addition, a ferromagnetic object loses it's magnetic properties at a certain critical temperature known as the Curie Temperature, $T_C$, which may also be used to describe phase transition between ferromagnetism and paramagnetism \cite{FeynmanFM}. Thus, in order to examine such phase transitions in ferromagnets, this project empathizes mean energy, temperature, and net magnetization, as well as two additional parameters; specific heat capacity at constant volume, $C_V$, which are related to the derivative of the Helmholt'z free energy \cite{HJ-SP}, and the magnetic susceptibility, $\chi$, which quantifies the material's response to an external magnetic field. \newline
 
-The projects start by describing the \hyperref[SS:thermodynamic.properties]{thermodynamic properties} of the magnetic system are described, and expressions for $\langle E \rangle$, $C_V$, $\langle M \rangle$, and $\chi$. Next, the mathematical model known as the \hyperref[SS:Ising]{the Ising model}, utilizing a two dimensional lattice of size $L \times L$ is introduced and briefly explained. Then, this model is \hyperref[SS:M.Model_application]{applied to a magnetic system} of atom spins, and analytical expressions as functions of the temperature, $T$, are derived for an $L=2$ lattice, using the mean absolute value of the magnetic moment  $\langle |M| \rangle$ in addition to the previously mentioned properties.  \newline
 
-Having outlined the mathematical basis for the project, a Markov Chain Monte Carlo method known as the \hyperref[SS:MCMCmethod]{Metropolis algorithm} is  applied to the system in order to simulate the magnetic properties described by the Ising model. This algorithm is subsequently \hyperref[SS:init.algo.impl]{implemented} in a \textit{C++} program, and the simulation results for an $L=2$ lattice \hyperref[SS:R.initialeval]{compared} with the analytical values for $T=1$, which indicated that sufficiently accurate expectation values were produced after an equilibrium time $t_{eq} \approx 3 \cdot 10^6$ Monte Carlo cycles. \newline
+This projects start by describing the \hyperref[SS:thermodynamic.properties]{thermodynamic properties} of a magnetic system through the canonical ensemble, and expressions for $\langle E \rangle $, $C_V$, $\langle M \rangle $, and $\chi$ presented. Next, the mathematical model known as the \hyperref[SS:Ising]{the Ising model}, utilizing a two dimensional lattice of size $L \times L$ is introduced and briefly explained. Then, this model is \hyperref[SS:M.Model_application]{applied to a magnetic system} of atomic spins, and analytical expressions for $\langle E \rangle$, $\langle M \rangle$, $\chi$ and $C_V$ as functions of the temperature, $T$, are derived for an $L=2$ lattice, using the mean absolute value of the magnetic moment  $\langle |M| \rangle$ in addition to the previously mentioned properties.  \newline
 
-Upon having established algorithm integrity through the initial test described above,\hyperref[SS:M.Eq.time]{$t_{eq}$ is further examined}, and the effects of initial spin configuration (random or ordered) looked into. 
+Having outlined the mathematical basis for the project, a Markov Chain Monte Carlo method known as the \hyperref[SS:MCMCmethod]{Metropolis algorithm} is  applied to the system in order to simulate the magnetic properties described by the Ising model. This algorithm is subsequently \hyperref[SS:init.algo.impl]{implemented} in a \textit{C++} program, and the simulation results for an $L=2$ lattice \hyperref[SS:R.initialeval]{compared} with the analytical values for $T=1$, which indicate that sufficiently accurate expectation values (within $10^{-3}$ of analytical values, except for $C_V$) may be produced after an equilibrium time of, $t_{eq} \approx 3 \cdot 10^6$ Monte Carlo cycles. $C_V$ had a relative accuracy of $0.1$ in relation to the other parameters). A \hyperref[SS:M.Eq.time]{re-examination of $C_V$} however, showed sufficiently stable $C_V$ for larger lattices ($L=20$) after $t_{eq}$. \newline
 
+Upon having established algorithm integrity through the initial test described above,\hyperref[SS:M.Eq.time]{ $t_{eq}$ is further examined}, and the effects of initial spin configuration (random or ordered) looked into. After which, the ordered initial configuration is \hyperref[SS:Disucssion_eqtime]{assumed to be more suited} for this project. In addition, the examination of $t_{eq}$ and parameter offset indicated that mean values should predominantly be sampled after $t_{eq}$. Using the results above, an $L=40$ lattice is examined with respect to the \hyperref[SS:M.variance ]{variance in energy} for $T=1$ and $T=2.3$. During which, the total energy of the lattice is recorded after each spin flip, and the probability distribution, $P(E)$, estimated - showing a tendency towards a Gaussian bell shape for $T=2.3$. \newline
 
-\hyperref[SS:M.variance ]{the Ising model}
-\hyperref[SS:M.Phase_trans]{the Ising model}
-\hyperref[SS:Est.Curie]{the Ising model}
+Lastly, \hyperref[SS:M.Phase_trans]{phase transitions} phase transitions in the Ising model are described, and power law estimates of the \hyperref[SS:Est.Curie]{Curie Temperature presented}. Then, the ability of the algorithm to \hyperref[SS.estCurie]{simulate phase transitions} tested, and compared to an analytical value for $T_C$. Here, a lack of data resolution and number of cycles yielded \hyperref[SS:DR.est.curie]{no definite conclusions}. \newline
 
-SS:results.VAR 
-SS.R.EQtime 
-SS:R.initialeval
-SS.estCurie
-$k_B T$ - is temp!
+Throughout this project, $k_B T$ is often written as $T$, and other similar relaxations taken with respect to units. All programs, results and files used in this project may be found on the author's \href{https://github.com/johanere/CP4}{Github repository}.
 
-
-2.3 not 2.4 as 2.3 is used in the last, and not 2.4. 
 \section{Methods}
 
 \begin{comment}
@@ -384,12 +381,15 @@ T_C(L)-T_C(L=\infty) \propto a L^{-1/\nu}
 
 \subsection{Estimating the Curie temperature}
 \label{SS.Est.Curie}
-By applying \eqref{eq:TCinf}, $T_C$ in the thermodynamic limit $L \rightarrow \infty$ is now estimated using lattice sizes $L=40, 60, 80,100$. As the run time of each Monte Carlo cycle drastically increases with higher values of $L$, parallelization methods using Message Passing Interface (MPI) for \textit{C++}. This enables the use of multiple logical cores, thus speeding up the simulations.  The Github page of the course Computational Physics at the University of Oslo \cite{CPgithub} provides a readily built Ising program with MPI utility - which in this project is modified to only sample expectation values after a given equilibrium time $t_{eq}$. Using this modified program, lattices of size $L=40, 60, 80, 100$ are simulated for temperatures in the range $[2.0,2.3]$, over a total of $3.3 \cdot 10^6$, with $t_{eq}=3 \cdot 10^6$. 
+By applying \eqref{eq:TCinf}, $T_C$ in the thermodynamic limit $L \rightarrow \infty$ is now estimated using lattice sizes $L=40, 60, 80,100$. $\nu$ is set to $1$. The exact results for $kT_C/J$ is $\approx 2.269$ \cite{assignmentpaper}.  As the run time of each Monte Carlo cycle drastically increases with higher values of $L$, parallelization methods using Message Passing Interface (MPI) for \textit{C++}. This enables the use of multiple logical cores, thus speeding up the simulations.  The Github page of the course Computational Physics at the University of Oslo \cite{CPgithub} provides a readily built Ising program with MPI utility - which in this project is modified to only sample expectation values after a given equilibrium time $t_{eq}$. Using this modified program, lattices of size $L=40, 60, 80, 100$ are simulated for temperatures in the range $[2.0,2.3]$ and $\Delta=0.05$, over a total of $3.3 \cdot 10^6$, with $t_{eq}=3 \cdot 10^6$. As the magnetization around $T_C$ is expected to decrease towards zero, change of spin configuration quite suddenly alter the sign of $\langle M \rangle$. Due to this, $\langle |M| \rangle$ is instead examined in these large lattice simulations. \newline
+
+Following the simulations, a sequence of similar simulations over a smaller range of $T$ up to $T=2.3$ with $\Delta t=0.005$ are carried out, using the same lattice sizes, but with $1.1 \cdot 10^6$ cycles, and $t_{eq}=1 \cdot 10^6$. This reduction in cycles is due to time constrains, and is a necessary but unfortunate discrepancy in this project. 
+
 
 \section{Results}
 \subsection{Initial evaluation of Metropolis implementation}
 \label{SS:R.initialeval}
-Figure \ref{fig:initial_tests} shows the results from initial tests of the program implementation of Ising model using Metropolis algorithm, with $L=2$ and a total of $10^7$ cycles for $T=1$. The resolution of the graphs is $10000$ cycles. The figures clearly show that all four parameters ( $\langle E \rangle$, $\langle | M \rangle$, $\chi$, $V_C$), deviate significantly from the analytical values for low numbers ($<2 \cdot 10^6 $) of Mote Carlo cycles. In addition, the fluctuations in the expectation values are all relatively strong for all parameters for $<2 \cdot 10^6 $ cycles. After $3 \cdot 10^6$ cycles however, the $\langle E\rangle$, $\langle |M| \rangle$ and $\chi$ all appear to stabilize, with minor fluctuations around a fixed center value. $C_V$ however, appears to fluctuate with higher amplitude up to about $6 \cdot 10^6$. The maximum relative error ($\epsilon$) are presented in table  \ref{tab:abserrors} for all all parameters after $3 \cdot 10^6$ cycles.
+Figure \ref{fig:initial_tests} shows the results from initial tests of the program implementation of Ising model using Metropolis algorithm, with $L=2$ and a total of $10^7$ cycles for $T=1$. The resolution of the graphs is $10000$ cycles. The figures clearly show that all four parameters ( $\langle E \rangle$, $\langle | M \rangle$, $\chi$, $V_C$), deviate significantly from the analytical values for low numbers ($<2 \cdot 10^6 $) of Mote Carlo cycles. In addition, the fluctuations in the expectation values are all relatively strong for all parameters for $<2 \cdot 10^6 $ cycles. After $3 \cdot 10^6$ cycles however, the $\langle E\rangle$, $\langle |M| \rangle$ and $\chi$ all appear to stabilize, with minor fluctuations around a fixed mean value. $C_V$ however, appears to fluctuate with higher amplitude up to about $6 \cdot 10^6$. The maximum relative error ($\epsilon$) are presented in table  \ref{tab:abserrors} for all all parameters after $3 \cdot 10^6$ cycles.
 
 
 \begin{table}[h!tb]
@@ -426,7 +426,7 @@ columns/info/.style={sci zerofill
 \subsection{Equilibrium time}
 \label{SS.R.EQtime }
 \subsubsection*{Augmentation of initial tests}
-Figure \ref{fig:L20CV} shows $C_V$ over $7 \cdot 10^6$ cycles - which upon  inspection has a clear stable trend after $3 \cdot 10^6$ cycles  - more under discussion of results. (does not know anaylitcal). \newline
+Figure \ref{fig:L20CV} shows $C_V$ over $7 \cdot 10^6$ cycles - which upon  inspection has a clear stable trend after $3 \cdot 10^6$ cycles  - more under discussion of results. \newline
 
 \begin{figure}[!htb]
         \centering 
@@ -522,22 +522,55 @@ Lastly, in order to compare the observations above with $\langle E \rangle$ for 
 \label{SS.estCurie}
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.6]{../Results/initial_phase.png} 
+         \includegraphics[scale=.5]{../Results/initial_phase.png} 
         \caption{$\langle E \rangle, C_V, \langle | M | \rangle, \chi$ as functions of $T$, with $\Delta=0.05$, for $L=40,60,80,100$ using $3.3\cdot 10^6$ cycles per temperature, with $t_{eq}=3 \cdot 10^6$.}
         \label{fig:initial_phase}   
 \end{figure}
 
-Figure \ref{fig:initial_phase} shows a clear tendency for $\langle |M| \rangle$ to decrease towards as $T$ increases, and appears to decrease faster for higher values of $L$ around $T=2.25$. Furthermore, $\chi$ increases drastically after $T=2.20$, and again especially so for higher values of $L$, where $L=80$ has the highest peak at $\chi \approx 1200$. More on this under discussion of results. As has been observed previously, $\langle E \rangle$ increases with temperature, as does $C_V$, which for higher values of $L$ increases more after $T\approx 2.2$. See \hyperref[SS.disc.var]{discussion of energy variance} for more on this.
+Figure \ref{fig:initial_phase} shows a clear tendency for $\langle |M| \rangle$ to decrease towards as $T$ increases, and appears to decrease faster for higher values of $L$ around $T=2.25$. Furthermore, $\chi$ increases drastically after $T=2.20$, and again especially so for higher values of $L$, where $L=80$ has the highest peak at $\chi \approx 1200$. More on this under discussion of results. As has been observed previously, $\langle E \rangle$ increases with temperature, as does $C_V$, which for higher values of $L$ increases more after $T\approx 2.2$. See \hyperref[SS.disc.var]{discussion of energy variance} for more on this. \newline
+
+
+\begin{figure}[!htb]
+        \centering 
+         \includegraphics[scale=.5]{../Results/second_phase.png} 
+        \caption{$\langle E \rangle, C_V, \langle | M | \rangle, \chi$ as functions of $T$, with $\Delta=0.005$, for $L=40,60,80,100$ using $1.1\cdot 10^6$ cycles per temperature, with $t_{eq}=1 \cdot 10^6$.}
+        \label{fig:second_phase}   
+\end{figure}
+
+Figure \ref{fig:second_phase} shows the results for the second large lattice simulations on a narrow range of $T$, with higher resolution, albeit with a reduced number of cycles. There are significant fluctuations in both $\chi$ and $\langle | M| \rangle$, especially in terms of $\chi$ for $L=80$ and $60$, and $\langle |M| \rangle$ for $L=100$. Due to this, the following values of $T_C(L)$ are based on assumptions and should be recalculated for confirmation. See \hyperref[DR.est.curie]{discussion of results}. \newline
+
+Based on the expected behaviours of $\langle | M | \rangle$, $\chi$, and $C_V$ near $T_C$, $T_C(L)$ for $L=40,60,80,100$ are estimated by eye, and presented in table \ref{tab:curietemps}. Solving \eqref{eq:TCinf} for $T_C$, and taking the average over the value corresponding to each $T_C(L)$ in the table yields $T_C=2.2390 J/k_B$. More under discussion of results.
+
+\begin{table}[h!tb]
+    \centering
+    \caption{By-eye estimates of $T_C(L)$}
+\pgfplotstableset{% global config, for example in the preamble
+% these columns/<colname>/.style={<options>} things define a style
+% which applies to <colname> only.
+columns/F/.style={column name=\textsc{$T_C(40)$}},
+columns/S/.style={column name=\textsc{$T_C(60)$}},
+columns/A/.style={column name=\textsc{$T_C(80)$}},
+columns/H/.style={column name=\textsc{$T_C(100)$}},
+empty cells with={--}, % replace empty cells with ’--’
+every head row/.style={before row=\toprule,after row=\midrule},
+every last row/.style={after row=\bottomrule}
+}
+\pgfplotstabletypeset[ % local config, applies only for this table
+1000 sep={\,},
+columns/info/.style={sci zerofill
+}
+]
+{curietemps.dat}
+\label{tab:curietemps}
+\end{table}
+
 
 \section{Discussion of results}
 \subsection{Initial evaluation of Metropolis implementation}
 \label{SS:Disucssion_init_eval}
 The initial tests of the algorithm implementation indicates that the program simulates the $2x2$ lattice successfully. All parameters except $C_V$ are within a relative tolerance of $10^{-3}$ from the analytical values after $3 \cdot 10^6$ cycles. The mean of $C_V$ however is relatively inaccurate compared with the other values - whether this is due to some discrepancy in algorithm development, a consequence of the choice of mathematical model, or a statistical phenomenon is unclear . \newline
 
-After approximately $6 \cdot 10^6$ cycles, $C_V$ appears to stabilize - albeit around a value $0.001$ higher than the analytical value. It is not unlikely that such an offset is a consequence of summing up from the beginning of the simulation - which may lead to an accumulation of unrepresentative values during the first cycles - and may very well have affected all parameters to one degree on another. Increasing the total number of cycles will result in a gradual decrease of this offset. Another solution is to not record any mean values prior to the equilibrium time. In addition, a higher $L$ is expected to increase stability of all expectation values after equilibrium time. Thus, despite the larger relative error in $C_V$ for this number of cycles, the equilibrium time is initially estimated to $\sim 3 \cdot 10^6$ cycles, based on  figures \ref{fig:init_test_E} to \ref{fig:init_test_Cv}, and table \ref{tab:abserrors} - pending further testing of the time evolution of the system.
-
-\subsection{Initial evaluation of Metropolis implementation}
-Both $\langle E \rangle>$ and $\langle |M| \rangle$ apparently drifts further from the analytical values. This may be to some discrepancy in algorithm implementation, or it possible due to the lattice size or some other simulation paramter - further testing is needed to ascertain this for sure. As both $C_V$ and $\langle E \rangle$ direclty follows the energy of the lattice, these parameters covariate, as figure \ref{fig:init_test_E} and \ref{fig:init_test_Cv} show. The initial offset that is gradually decreased is likely the results of the inclusion of energy values prior to the equilibrium state in calculating the expectation values. More on this later.
+After approximately $6 \cdot 10^6$ cycles, $C_V$ appears to stabilize - albeit around a value $0.001$ higher than the analytical value. It is not unlikely that such an offset is a consequence of summing up from the beginning of the simulation - which may lead to an accumulation of unrepresentative values during the first cycles - and may very well have affected all parameters to one degree on another. Increasing the total number of cycles will result in a gradual decrease of this offset. Another solution is to not record any mean values prior to the equilibrium time. In addition, a higher $L$ is expected to increase stability of all expectation values after equilibrium time. Thus, despite the larger relative error in $C_V$ for this number of cycles, the equilibrium time is initially estimated to $\sim 3 \cdot 10^6$ cycles, based on  figure \ref{fig:initial_tests} and table \ref{tab:abserrors} - pending further testing of the time evolution of the system.
 
 \subsection{Equilibrium time}
 \label{SS:Disucssion_eqtime}
@@ -553,12 +586,15 @@ $T=2.3$ has, as previously mentioned, a significantly larger variance in energy 
 
 
 \subsection{Estimating the Curie temperature}
-As described under the presentation of results, $\langle |M| \rangle$ decreases , and $\chi$ increases, distinctively after $T=2.25$.  The fact that higher values of $L$ exhibit this behaviour more strongly may indicate phase transitions in the range $T=[2.2,2.3]$. $\chi$ spikes at approximately $T=2.25$ for all values of $L$. However, this does not necessarily mean that $T_C\approx T=2.25$, due to the temperature resolution of the graph ($\Delta T=0.05$).
+\label{SS:DR.est.curie}
+As described under the presentation of results, after $T=2.25$, a distinct decrease in $\langle |M| \rangle$ decreases , and a distinct increase in $\chi$, may be observed. The fact that higher values of $L$ exhibit this behaviour more strongly may indicate phase transitions in the range $T=[2.2,2.3]$. $\chi$ spikes at approximately $T=2.25$ for all values of $L$. However, this does not necessarily mean that $T_C\approx T=2.25$, due to the temperature resolution of the graph ($\Delta T=0.05$).   \newline
 
+The results from the $\Delta t=0.005$ simulations fluctuate more than expected. This is most likely due to $t_{eq}$ beeing only $1\cdot 10^6$ and the total number of cycles $1.1\cdot 10^6$. This means that any conclusions drawn from the data will be speculative and prone to errors - a future rerun of the simulations with a high $\Delta T$ and $t_{eq}\geq 3 \cdot 10^6$ should be carried out in order to verify or correct the following assumptions: \newline
 
+Based on the estimated values of $T_C(L)$ for $L=40,60,80,100$, $T_C=2.2390 J/k_B$, which is $0.0300 J/k_B$ from the analytical value. This is a significant deviation, and the estimated values for$T_C(L)$, on which the calculation is based, are highly speculative. Therefore, no conclusions on the Metropolis algorithm's ability to reproduce the analytical Curie temperature may be made, other than that the simulations appear to show trends in $\langle |M| \rangle$, $\chi$ and $C_V$ associated with the expected behaviour of the model near the Curie temperature.
 
 \section{Conclusions}
-$3 \cdot 10^6$ cycles, $\langle E \rangle \approx -1.9960 \pm 0.0001$, $C_V \approx 0.032 \pm 0.0001$, $\chi \approx 3.99 \pm 0.005$, while $\langle |M| \rangle \approx 0.99865 \pm 0.00005$. More on this under discussion of results. 
+Conclude that the Ising model using the metropolis algorithm can simulate an $L=2$ lattice within a relative tolerance of $10^{-3}$ on three of four paramters from the analytical values after $3 \cdot 10^6$ cycles, although $6 \cdot 10^6$ cycles should be used if $C_V$ is of special interest. On the other hand, $C_V$ appears stable after $3\cdot 10^6$ for $L=20$.   Thus, $t_{eq}=3\cdot 10^6$, under the assumption that larger lattices will further increase stability of mean. In order to remove initial expectation value bias, such values should only be recorded after $t_{eq}$. On low temperatures, random initial spin configuration is concluded to result in higher stabilization time for mean values - thus ordered initial spin is to be preferred in general. The Metropolis algorithm implementation appears to produce some of the expected behaviour near the Curie temperature for lattices up to $L=100$. Discrepancies in data resolution and number of cycles before and after $t_{eq}$ means that no definite conclusions may be drawn with regards to applications in the study of phase transitions. A definite conclusion to this question could however be obtained through re-evaluation of the program, using for example a cluster computing.
 
 \bibliographystyle{plain}
 \bibliography{ref}
