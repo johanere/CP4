@@ -146,16 +146,18 @@ Simulating the The Ising model using the Metropolis algorithm
 
 % --- begin date ---
 \begin{center}
-Sep 24, 2018
+Nov 21, 2018
 \end{center}
 % --- end date ---
 
 \vspace{1cm}
-The Stern Gerlach experiment in \newline
-\section{Abstract}
-The scope of this project is to examine a numerical simulation of the Ising model, implemented into a program through use of the the Metropolis algorithm. Specifically, this project aims to evaluate the ability of said program to simulate the expected ferromagnetic behaviour for spin lattices of up to $40 \times 40$, and it's aptitude for applications in the studies of phase transitions for lattices up to $100 \times 100$. 
 
-Conclude that the Ising model using the metropolis algorithm can simulate an $L=2$ lattice within a relative tolerance of $10^{-3}$ on three of four paramters from the analytical values after $3 \cdot 10^6$ cycles, although $6 \cdot 10^6$ cycles should be used if $C_V$ is of special interest. On the other hand, $C_V$ appears stable after $3\cdot 10^6$ for $L=20$.   Thus, $t_{eq}=3\cdot 10^6$, under the assumption that larger lattices will further increase stability of mean. In order to remove initial expectation value bias, such values should only be recorded after $t_{eq}$. On low temperatures, random initial spin configuration is concluded to result in higher stabilization time for mean values - thus ordered initial spin is to be preferred in general. The Metropolis algorithm implementation appears to produce some of the expected behaviour near the Curie temperature for lattices up to $L=100$. Discrepancies in data resolution and number of cycles before and after $t_{eq}$ means that no definite conclusions may be drawn with regards to applications in the study of phase transitions. A definite conclusion to this question could however be obtained through re-evaluation of the program, using for example a cluster computing.
+\section{Abstract}
+The scope of this project is to examine a numerical simulation of the Ising model, implemented into a program through use of the the Metropolis algorithm. Specifically, this project aims to evaluate the ability of said program to simulate the expected ferromagnetic behaviour for spin lattices of up to $40 \times 40$, and it's aptitude for applications in the studies of phase transitions for lattices up to $100 \times 100$. \newline
+
+The main findings of this project is that high resolution in temperature ($\Delta T \leq 0.005 k_b T$) is needed to draw definite conclusions on program aptitude in studies on phase transitions. Due to the the resolution used in this project, $\Delta T = 0.05$, it may only be stated that the algorithm appears to produce results similar to the expected trends with respect to the expectation values of the energy ($\langle E \rangle$) and absolute magnetization ($\langle |M| \rangle$), the magnetic susceptibility ($\chi$and the specific heat capacity $ C_V$. Further more, this project establishes that the Metropolis algorithm may be used to simulate an Ising model lattice - producing results with a relative tolerance of $10^{-3}$ for all previously mentioned quantities except $C_V$
+for an $L=2$ lattice, after $3\cdot 10^6$ equilibrium cycles. Lastly, examinations of lattices in the order of magnitude up to $10^2$ carried out in this project, show reliably low fluctuations for $\langle E \rangle, \langle |M| \rangle, \chi, C_V$ after  $3\cdot 10^6$ equilibrium cycles.
+
 
 \section{Introduction}
 
@@ -183,18 +185,9 @@ Upon having established algorithm integrity through the initial test described a
 
 Lastly, \hyperref[SS:M.Phase_trans]{phase transitions} phase transitions in the Ising model are described, and power law estimates of the \hyperref[SS:Est.Curie]{Curie Temperature presented}. Then, the ability of the algorithm to \hyperref[SS.estCurie]{simulate phase transitions} tested, and compared to an analytical value for $T_C$. Here, a lack of data resolution and number of cycles yielded \hyperref[SS:DR.est.curie]{no definite conclusions}. \newline
 
-Throughout this project, $k_B T$ is often written as $T$, and other similar relaxations taken with respect to units. All programs, results and files used in this project may be found on the author's \href{https://github.com/johanere/CP4}{Github repository}.
+Throughout this project, $k_B T$ is often simply written as $T$, and other similar relaxations taken with respect to units. All programs, results and files used in this project may be found on the author's \href{https://github.com/johanere/CP4}{Github repository}.
 
 \section{Methods}
-
-\begin{comment}
-- Brief description of magnets (finn en kilde)
-	- magnetic properties in relation to spin- stern gerlach -> sammenheng mellom spinn og magnetisme (ikke grei ut mye)
-	- Sammenheng mellom temp og magnetisk egenskaper (M) -> faseovergang
-	- Energy relatert til SS av systemet - stabilty->ss. Helmholtz free. Ser på magnet om isolert system -> må ha med varmekap.
-	-critical temp on magnets - lose magn. properties in phase 	 		transition ( exact critical temp Lars Onsager)
-	- mål på faseovergang: varmekap, mag. susc, chi (reponse of magnet to ext. mag field) 
-\end{comment}
 
 \subsection{Thermodynamic properties}
 \label{SS:thermodynamic.properties}	
