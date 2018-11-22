@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.3)  22 NOV 2018 03:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.3)  22 NOV 2018 03:21
 entering extended mode
 **./CP4JN_18.tex
 (CP4JN_18.tex
@@ -1039,37 +1039,37 @@ LaTeX Info: Redefining \nameref on input line 111.
 \c@lstlisting=\count180
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 111.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 156.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 157.
 
 
 (C:\Johan\Miktex\tex\latex\lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 156.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 157.
 
 
 (C:\Johan\Miktex\tex\latex\lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 156
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 157
 .
 
 (C:\Johan\Miktex\tex\latex\lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 156
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 157
 .
 
 (C:\Johan\Miktex\tex\latex\lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 156.
+(Font)              <10> on input line 157.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 156.
+(Font)              <7> on input line 157.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 156.
-LaTeX Font Info:    Try loading font information for U+msa on input line 156.
+(Font)              <5> on input line 157.
+LaTeX Font Info:    Try loading font information for U+msa on input line 157.
 
 (C:\Johan\Miktex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1077,7 +1077,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Johan\Miktex\tex\latex\microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 156.
+LaTeX Font Info:    Try loading font information for U+msb on input line 157.
 
 (C:\Johan\Miktex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1085,78 +1085,82 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Johan\Miktex\tex\latex\microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 [1
 
 {C:/Users/Johan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
 
 LaTeX Warning: Hyper reference `SS:M.variance ' on page 3 undefined on input li
-ne 184.
+ne 185.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
 LaTeX Warning: Hyper reference `SS:M.Phase_trans' on page 3 undefined on input 
-line 186.
+line 187.
 
 
 LaTeX Warning: Hyper reference `SS:Est.Curie' on page 3 undefined on input line
- 186.
+ 187.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
 PGFPlots: reading {states.dat}
-[4]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 303--303
+[5]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 304--304
  [] 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
@@ -1165,22 +1169,22 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 372--374
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
@@ -1189,238 +1193,204 @@ PGFPlots: reading {relerror.dat}
 <../Results/initial_tests.png, id=245, 811.5921pt x 576.7146pt>
 File: ../Results/initial_tests.png Graphic file (type png)
 <use ../Results/initial_tests.png>
-Package pdftex.def Info: ../Results/initial_tests.png  used on input line 414. 
-on input line 414.
+Package pdftex.def Info: ../Results/initial_tests.png  used on input line 415. 
+on input line 415.
 Package pdftex.def Info: Requested size: 405.79506pt x 288.35658pt on input lin
-e 414.
+e 415.
 
-Overfull \hbox (60.79506pt too wide) in paragraph at lines 414--415
+Overfull \hbox (60.79506pt too wide) in paragraph at lines 415--416
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
  []
 
 <../Results/L20T1_CV.png, id=248, 650.43pt x 433.62pt>
 File: ../Results/L20T1_CV.png Graphic file (type png)
 <use ../Results/L20T1_CV.png>
-Package pdftex.def Info: ../Results/L20T1_CV.png  used on input line 426. on in
-put line 426.
+Package pdftex.def Info: ../Results/L20T1_CV.png  used on input line 427. on in
+put line 427.
 Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 426.
+ 427.
 
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 426--427
+Overfull \hbox (12.7376pt too wide) in paragraph at lines 427--428
  [][] 
  []
 
-[10 <../Results/initial_tests.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
-[11 <../Results/L20T1_CV.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
-<../Results/L20T1_eq_E.png, id=270, 650.43pt x 433.62pt>
+<../Results/L20T1_eq_E.png, id=264, 650.43pt x 433.62pt>
 File: ../Results/L20T1_eq_E.png Graphic file (type png)
 <use ../Results/L20T1_eq_E.png>
-Package pdftex.def Info: ../Results/L20T1_eq_E.png  used on input line 440. on 
-input line 440.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 440.
-
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 440--441
- [][] 
- []
-
-<../Results/L20T23_E.png, id=271, 650.43pt x 433.62pt>
+Package pdftex.def Info: ../Results/L20T1_eq_E.png  used on input line 441. on 
+input line 441.
+Package pdftex.def Info: Requested size: 292.6908pt x 195.1272pt on input line 
+441.
+[11 <../Results/initial_tests.png>]
+<../Results/L20T23_E.png, id=272, 650.43pt x 433.62pt>
 File: ../Results/L20T23_E.png Graphic file (type png)
 <use ../Results/L20T23_E.png>
-Package pdftex.def Info: ../Results/L20T23_E.png  used on input line 447. on in
-put line 447.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 447.
-
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 447--448
- [][] 
- []
-
-<../Results/Econvergence.png, id=272, 650.43pt x 433.62pt>
+Package pdftex.def Info: ../Results/L20T23_E.png  used on input line 448. on in
+put line 448.
+Package pdftex.def Info: Requested size: 292.6908pt x 195.1272pt on input line 
+448.
+ [12 <../Results/L20T1_CV.png> <../Results/L20T1_eq_E.png>]
+<../Results/Econvergence.png, id=280, 650.43pt x 433.62pt>
 File: ../Results/Econvergence.png Graphic file (type png)
 <use ../Results/Econvergence.png>
-Package pdftex.def Info: ../Results/Econvergence.png  used on input line 454. o
-n input line 454.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 454.
-
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 454--455
- [][] 
- []
-
-<../Results/Mconvergence.png, id=273, 650.43pt x 433.62pt>
+Package pdftex.def Info: ../Results/Econvergence.png  used on input line 455. o
+n input line 455.
+Package pdftex.def Info: Requested size: 292.6908pt x 195.1272pt on input line 
+455.
+<../Results/Mconvergence.png, id=281, 650.43pt x 433.62pt>
 File: ../Results/Mconvergence.png Graphic file (type png)
 <use ../Results/Mconvergence.png>
-Package pdftex.def Info: ../Results/Mconvergence.png  used on input line 461. o
-n input line 461.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 461.
-
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 461--462
- [][] 
- []
-
-<../Results/L20T1_acceptedconfigs.png, id=277, 650.43pt x 433.62pt>
+Package pdftex.def Info: ../Results/Mconvergence.png  used on input line 462. o
+n input line 462.
+Package pdftex.def Info: Requested size: 292.6908pt x 195.1272pt on input line 
+462.
+ [13 <../Results/L20T23_E.png> <../Results/Econvergence.png>]
+<../Results/L20T1_acceptedconfigs.png, id=294, 650.43pt x 433.62pt>
 File: ../Results/L20T1_acceptedconfigs.png Graphic file (type png)
 <use ../Results/L20T1_acceptedconfigs.png>
 Package pdftex.def Info: ../Results/L20T1_acceptedconfigs.png  used on input li
-ne 471. on input line 471.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 471.
-
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 471--472
- [][] 
- []
-
-[12 <../Results/L20T1_eq_E.png>]
-<../Results/L20T2_acceptedconfigs.png, id=288, 650.43pt x 433.62pt>
+ne 472. on input line 472.
+Package pdftex.def Info: Requested size: 292.6908pt x 195.1272pt on input line 
+472.
+<../Results/L20T2_acceptedconfigs.png, id=295, 650.43pt x 433.62pt>
 File: ../Results/L20T2_acceptedconfigs.png Graphic file (type png)
 <use ../Results/L20T2_acceptedconfigs.png>
 Package pdftex.def Info: ../Results/L20T2_acceptedconfigs.png  used on input li
-ne 477. on input line 477.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 477.
-
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 477--478
- [][] 
- []
-
-<../Results/configs_temperature.png, id=289, 650.43pt x 433.62pt>
+ne 478. on input line 478.
+Package pdftex.def Info: Requested size: 292.6908pt x 195.1272pt on input line 
+478.
+<../Results/configs_temperature.png, id=296, 650.43pt x 433.62pt>
 File: ../Results/configs_temperature.png Graphic file (type png)
 <use ../Results/configs_temperature.png>
 Package pdftex.def Info: ../Results/configs_temperature.png  used on input line
- 485. on input line 485.
-Package pdftex.def Info: Requested size: 357.7376pt x 238.49173pt on input line
- 485.
+ 486. on input line 486.
+Package pdftex.def Info: Requested size: 260.16739pt x 173.44492pt on input lin
+e 486.
 
-Overfull \hbox (12.7376pt too wide) in paragraph at lines 485--486
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-<../Results/P(E).png, id=292, 462.528pt x 346.896pt>
+[14 <../Results/Mconvergence.png>]
+<../Results/P(E).png, id=307, 462.528pt x 346.896pt>
 File: ../Results/P(E).png Graphic file (type png)
 <use ../Results/P(E).png>
-Package pdftex.def Info: ../Results/P(E).png  used on input line 500. on input 
-line 500.
+Package pdftex.def Info: ../Results/P(E).png  used on input line 501. on input 
+line 501.
 Package pdftex.def Info: Requested size: 323.76738pt x 242.82553pt on input lin
-e 500.
-[13 <../Results/L20T23_E.png>]
-<../Results/e_var_fit.png, id=301, 462.528pt x 346.896pt>
+e 501.
+<../Results/e_var_fit.png, id=308, 462.528pt x 346.896pt>
 File: ../Results/e_var_fit.png Graphic file (type png)
 <use ../Results/e_var_fit.png>
-Package pdftex.def Info: ../Results/e_var_fit.png  used on input line 508. on i
-nput line 508.
-Package pdftex.def Info: Requested size: 323.76738pt x 242.82553pt on input lin
-e 508.
-<../Results/initial_phase.png, id=302, 732.8178pt x 346.896pt>
+Package pdftex.def Info: ../Results/e_var_fit.png  used on input line 509. on i
+nput line 509.
+Package pdftex.def Info: Requested size: 277.51894pt x 208.13919pt on input lin
+e 509.
+<../Results/initial_phase.png, id=309, 732.8178pt x 346.896pt>
 File: ../Results/initial_phase.png Graphic file (type png)
 <use ../Results/initial_phase.png>
-Package pdftex.def Info: ../Results/initial_phase.png  used on input line 518. 
-on input line 518.
+Package pdftex.def Info: ../Results/initial_phase.png  used on input line 519. 
+on input line 519.
 Package pdftex.def Info: Requested size: 366.408pt x 173.44757pt on input line 
-518.
+519.
 
-Overfull \hbox (21.408pt too wide) in paragraph at lines 518--519
+Overfull \hbox (21.408pt too wide) in paragraph at lines 519--520
  [][] 
  []
 
+[15 <../Results/L20T1_acceptedconfigs.png> <../Results/L20T2_acceptedconfigs.pn
+g>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+LaTeX Warning: Text page 16 contains only floats.
+
+[16 <../Results/configs_temperature.png> <../Results/P(E).png>]
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
  []
 
-<../Results/second_phase.png, id=305, 836.1639pt x 452.4102pt>
+[17 <../Results/e_var_fit.png> <../Results/initial_phase.png>]
+<../Results/second_phase.png, id=331, 836.1639pt x 452.4102pt>
 File: ../Results/second_phase.png Graphic file (type png)
 <use ../Results/second_phase.png>
-Package pdftex.def Info: ../Results/second_phase.png  used on input line 528. o
-n input line 528.
+Package pdftex.def Info: ../Results/second_phase.png  used on input line 529. o
+n input line 529.
 Package pdftex.def Info: Requested size: 418.08092pt x 226.20454pt on input lin
-e 528.
+e 529.
 
-Overfull \hbox (73.08092pt too wide) in paragraph at lines 528--529
+Overfull \hbox (73.08092pt too wide) in paragraph at lines 529--530
  [][] 
  []
 
 
-LaTeX Warning: Hyper reference `DR.est.curie' on page 14 undefined on input lin
-e 533.
+LaTeX Warning: Hyper reference `DR.est.curie' on page 18 undefined on input lin
+e 534.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
-[14 <../Results/Econvergence.png>]
 PGFPlots: reading {curietemps.dat}
- [15 <../Results/Mconvergence.png>] [16 <../Results/L20T1_acceptedconfigs.png>]
- [17 <../Results/L20T2_acceptedconfigs.png>]
-[18 <../Results/configs_temperature.png>] [19 <../Results/P(E).png>] [20 <../Re
-sults/e_var_fit.png> <../Results/initial_phase.png>] [21 <../Results/second_pha
-se.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+[18 <../Results/second_phase.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
+
+ []
+
+[19]
+
+LaTeX Warning: Hyper reference `SS:results.VAR' on page 20 undefined on input l
+ine 577.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--578
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
-
- []
-
-[22
-
-]
-
-LaTeX Warning: Hyper reference `SS:results.VAR' on page 23 undefined on input l
-ine 576.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--577
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
-(CP4JN_18.bbl [24]) [25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 598.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 598.
+(CP4JN_18.bbl [21]) [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
  (CP4JN_18.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 598.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
 
 
  *File List*
@@ -1568,7 +1538,7 @@ CP4JN_18.out
 CP4JN_18.bbl
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 598.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 599.
 Package rerunfilecheck Info: File `CP4JN_18.out' has not changed.
 (rerunfilecheck)             Checksum: 722BFD3FD6F878D4847014F788019842;1622.
 
@@ -1576,28 +1546,29 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31747 strings out of 493312
- 731384 string characters out of 3144112
- 950813 words of memory out of 3000000
- 34427 multiletter control sequences out of 15000+200000
- 66018 words of font info for 129 fonts, out of 3000000 for 9000
+ 31753 strings out of 493312
+ 731480 string characters out of 3144112
+ 949690 words of memory out of 3000000
+ 34429 multiletter control sequences out of 15000+200000
+ 70679 words of font info for 133 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,98p,1263b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Johan/Miktex/fonts/enc/dvips/lm/lm-rm.enc}{C:/Johan/Miktex/fonts/enc/dvip
-s/lm/lm-mathsy.enc}{C:/Johan/Miktex/fonts/enc/dvips/lm/lm-ec.enc}{C:/Johan/Mikt
-ex/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Johan/Miktex/fonts/enc/dvips/lm/lm-math
-it.enc}<C:/Johan/Miktex/fonts/type1/public/lm/lmbx10.pfb><C:/Johan/Miktex/fonts
-/type1/public/lm/lmbx12.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmex10.pfb><
-C:/Johan/Miktex/fonts/type1/public/lm/lmmi10.pfb><C:/Johan/Miktex/fonts/type1/p
-ublic/lm/lmmi5.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmmi7.pfb><C:/Johan/M
-iktex/fonts/type1/public/lm/lmr10.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lm
-r5.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmr7.pfb><C:/Johan/Miktex/fonts/t
-ype1/public/lm/lmr9.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmri10.pfb><C:/J
-ohan/Miktex/fonts/type1/public/lm/lmsy10.pfb><C:/Johan/Miktex/fonts/type1/publi
-c/lm/lmsy5.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmsy7.pfb>
-Output written on CP4JN_18.pdf (25 pages, 1013831 bytes).
+s/lm/lm-mathsy.enc}{C:/Johan/Miktex/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Johan/
+Miktex/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Johan/Miktex/fonts/enc/dvips/lm/lm-
+ec.enc}<C:/Johan/Miktex/fonts/type1/public/lm/lmbx10.pfb><C:/Johan/Miktex/fonts
+/type1/public/lm/lmbx12.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmbxi10.pfb>
+<C:/Johan/Miktex/fonts/type1/public/lm/lmex10.pfb><C:/Johan/Miktex/fonts/type1/
+public/lm/lmmi10.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmmi5.pfb><C:/Johan
+/Miktex/fonts/type1/public/lm/lmmi7.pfb><C:/Johan/Miktex/fonts/type1/public/lm/
+lmr10.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmr5.pfb><C:/Johan/Miktex/font
+s/type1/public/lm/lmr7.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmr9.pfb><C:/
+Johan/Miktex/fonts/type1/public/lm/lmri10.pfb><C:/Johan/Miktex/fonts/type1/publ
+ic/lm/lmsy10.pfb><C:/Johan/Miktex/fonts/type1/public/lm/lmsy5.pfb><C:/Johan/Mik
+tex/fonts/type1/public/lm/lmsy7.pfb>
+Output written on CP4JN_18.pdf (22 pages, 1031634 bytes).
 PDF statistics:
- 449 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 19214 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 439 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 19726 words of extra memory for PDF output out of 20736 (max. 10000000)
 

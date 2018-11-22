@@ -152,6 +152,7 @@ Nov 21, 2018
 
 \vspace{1cm}
 
+
 \section{Abstract}
 The scope of this project is to examine a numerical simulation of the Ising model, implemented into a program through use of the the Metropolis algorithm. Specifically, this project aims to evaluate the ability of said program to simulate the expected ferromagnetic behaviour for spin lattices of up to $40 \times 40$, and it's aptitude for applications in the studies of phase transitions for lattices up to $100 \times 100$. \newline
 
@@ -160,7 +161,7 @@ for an $L=2$ lattice, after $3\cdot 10^6$ equilibrium cycles. Lastly, examinatio
 
 
 \section{Introduction}
-
+\textit{\textbf{Authors' comment:} I was, as mentioned in the abstract, unable to procure sufficient resolution for the data used in the study of phase transitions. Expecting that the computations using $\Delta T=0.05$ would take the entire night (turns out that this only took about an hour), I went to bed. By the time I realized I had to guesstimate using that resolution, there were no more nights available for the computer to work while I slept - lesson learned; when expecting long run times, test run with a print of the time about 1/10'th into the program. Also, during this project I have realized that I needed to learn how to use subplots, which I found the time to implement in most of the figures, but not all. I will definitely make better use of this function in the future. } \newline
 
 In general, magnets are objects which produce a magnetic field. Such fields arise from net magnetic moment and induction from electric currents  \cite{FeynmanMM}. In the case of the strong magnetic fields observed in ferromagnets, the spin configuration of electrons in neighboring atoms largely decides the net magnetic moment \cite{FeynmanFM}. This means that there is a connection between the microstate of the object and it's magnetic properties. These microstates are quantum states, and are therefore of a stochastic nature. The probability of a system occupying a specific microstate, may therefore be described in the canonical ensemble by the Boltzmann distribution \eqref{eq:Boltzdist} where $k_B$ is the Boltzmann constant, $T$ the temperature,  and $Z$ \eqref{eq:partitionfunction} the canonical partition function, which sums over the energy, $E$, of all possible states \cite{HJ-SP}. 
 
@@ -437,28 +438,28 @@ In figure \ref{fig:SPIN.E.convergence} initial spin configuration on equilibrium
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/L20T1_eq_E.png} 
+         \includegraphics[scale=.45]{../Results/L20T1_eq_E.png} 
         \caption{$\langle E \rangle$ for $T=1$ - ordered vs random initial configuration}
         \label{fig:L20T1E}   
 \end{figure} 
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/L20T23_E.png} 
+         \includegraphics[scale=.45]{../Results/L20T23_E.png} 
         \caption{$\langle E \rangle$ for $T=2.3$ - ordered vs random initial configuration}
         \label{fig:L20T23E}   
 \end{figure} 
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/Econvergence.png} 
+         \includegraphics[scale=.45]{../Results/Econvergence.png} 
         \caption{Comparison of convergence to $<|E|>_{eq}$ for ordered and random initial configuration, with $T=1$ and $T=2.3$}
         \label{fig:SPIN.E.convergence}   
 \end{figure} 
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/Mconvergence.png} 
+         \includegraphics[scale=.45]{../Results/Mconvergence.png} 
         \caption{Comparison of convergence to $<|M|>_{eq}$ for ordered and random initial configuration, with $T=1$ and $T=2.3$}
         \label{fig:SPIN.M.convergence}   
 \end{figure} 
@@ -468,13 +469,13 @@ Figures \ref{fig:SPIN.configsT1} and \ref{fig:SPIN.configsT23}, show the average
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/L20T1_acceptedconfigs.png} 
+         \includegraphics[scale=.45]{../Results/L20T1_acceptedconfigs.png} 
         \caption{Average (over $10^4$ cycles) number of accepted configurations per sweep for $T=1$, $L=20$, using both initial configurations}
         \label{fig:SPIN.configsT1}   
 \end{figure} 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/L20T2_acceptedconfigs.png} 
+         \includegraphics[scale=.45]{../Results/L20T2_acceptedconfigs.png} 
         \caption{Average (over $10^4$ cycles) number of accepted configurations per sweep for $T=1$, $L=20$, using both initial configurations}
         \label{fig:SPIN.configsT23}   
 \end{figure} 
@@ -482,7 +483,7 @@ Figures \ref{fig:SPIN.configsT1} and \ref{fig:SPIN.configsT23}, show the average
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.55]{../Results/configs_temperature.png} 
+         \includegraphics[scale=.40]{../Results/configs_temperature.png} 
         \caption{Average number of accepted configurations per sweep for $T=[1,2.4]$ after eq. time with a resolution of $0.3 k_B T$, $L=20$, $1 \cdot 10^6$ cycles after eq. time ($3 \cdot 10^6$) per data point.}
         \label{fig:SPIN.configs.temp}   
 \end{figure} 
@@ -505,8 +506,8 @@ Lastly, in order to compare the observations above with $\langle E \rangle$ for 
 
 \begin{figure}[!htb]
         \centering 
-         \includegraphics[scale=.7]{../Results/e_var_fit.png} 
-        \caption{Probability distribution, $P(E)$ for $T=2.3$ and $T=1$ on a $40 \times 40$ lattice, based on samplings from $5 \cdot 10^3$ cycles after equilibrium time}
+         \includegraphics[scale=.6]{../Results/e_var_fit.png} 
+        \caption{Energy sampling for $T=2.3$ fit to Gaussian distribution}
         \label{fig:VAR.fit}   
 \end{figure}
 
